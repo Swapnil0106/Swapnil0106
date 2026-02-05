@@ -1,1 +1,11 @@
+replicaCount: 2
 
+image:
+  repository: swap0106/nginx-app
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30081
